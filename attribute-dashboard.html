@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audience Builder — Component Configuration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="sb">
+      <div class="sb-logo">
+        <div class="logo-i">S</div>
+        <div><span style="font-weight:600;font-size:14px">Stroer</span><span
+            style="font-size:10px;color:var(--td);display:block">Online Marketing</span></div>
+      </div>
+      <div class="sb-nav">
+        <div class="ns">Audiences</div>
+        <div class="ni" onclick="go('discover')"><span style="width:16px;text-align:center">Q</span> Discover</div>
+        <div class="ni a"><span style="width:16px;text-align:center">&#9881;</span> Builder</div>
+        <div class="nsub">
+          <div class="ni" id="nv-builder" onclick="go('builder')">Builder</div>
+          <div class="ni" id="nv-attributes" onclick="go('attributes')">Attributes</div>
+          <div class="ni" id="nv-components" onclick="go('components')">Components</div>
+          <div class="ni" id="nv-mapping" onclick="go('mapping')">Mapping</div>
+        </div>
+        <div class="ni"><span style="width:16px;text-align:center">&#8776;</span> Approval</div>
+        <div class="ns">Distribution</div>
+        <div class="ni"><span style="width:16px;text-align:center">&#8599;</span> Exports</div>
+        <div class="ni"><span style="width:16px;text-align:center">&#9632;</span> Seats</div>
+        <div class="ni"><span style="width:16px;text-align:center">$</span> Pricings</div>
+        <div class="ns">Reporting and Monitoring</div>
+        <div class="ni"><span style="width:16px;text-align:center">&#9636;</span> Reporting</div>
+        <div class="ni"><span style="width:16px;text-align:center">&#8593;</span> Monitoring</div>
+      </div>
+    </div>
+    <div class="mc">
+      <div class="bc" id="breadcrumb"></div>
+      <div class="ca" id="content-area"></div>
+      <div class="fb">
+        <div class="ft">
+          <div class="ftab fta" onclick="go('builder')">Definition</div>
+          <div class="ftab">Meta Data</div>
+        </div>
+        <div style="flex:1"></div>
+        <button class="btn" onclick="genQuery()">&#9889; Check Reach</button>
+        <button class="btn">&larr; Previous</button>
+        <button class="btn bd">Next &rarr;</button>
+      </div>
+    </div>
+  </div>
+  <div class="dp" id="dp">
+    <div class="dh">
+      <h2 id="dt">&mdash;</h2><button class="cb" onclick="closeD()">&times;</button>
+    </div>
+    <div class="db" id="dbd"></div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
